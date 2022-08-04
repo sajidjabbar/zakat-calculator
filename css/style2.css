@@ -89,7 +89,7 @@ td .form-group span.control-group__currency {
 	text-align: center;
 }
 .zakat-calculator table td label.check-container span.checkmark .check {
-	border: 1px solid #8d8d8d;
+	/* border: 1px solid #8d8d8d; */
 	width: 27px;
 	height: 27px;
 	line-height: 23px;
