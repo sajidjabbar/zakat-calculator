@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="css/style2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<section class="zakat-calculator">
+			<div class="container">
+				<div class="heading"><h4>Zakah Calculator</h4></div>
+				<table id="table1" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Assets</th>
+							<th>Total</th>
+							<th>Assets subject to Zakat (£)</th>
+							<th>Assets not subject to Zakat (£)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="1">
+							<td>
+								Gold (Note there is pure 24 carats and Jewellery 22 - 18 - 14)
+							</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="2">
+							<td>Silver (Note there is pure, Jewellery and Household)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="3">
+							<td>Gold Coins</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="4">
+							<td>Cash in Hand</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="5">
+							<td>Cash in Bank</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="6">
+							<td>Stocks and Mutual Funds (at market value)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="7">
+							<td>Stock Options</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="8">
+							<td>Business Merchandise Inventory</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="9">
+							<td>Private Companies, Corporations and Partnerships</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="10">
+							<td>Retirement Plans (yearly amount)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="11">
+							<td>
+								Real Estate Investment (as business merchandise inventory, e.g.
+								2 houses)
+							</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="12">
+							<td>
+								Immovable property acquired for Investment (and not to resell),
+								whether company owned or privately owned
+							</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="13">
+							<td>Accounts Receivable</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="14">
+							<td>Profits from Investment</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="15">
+							<td>Trusts (yearly amount)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="16">
+							<td>Life Insurance</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+						<tr id="17">
+							<td>Lump Sum Payments (Compulsory Pension, etc.)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+						<tr id="18">
+							<td>Severance Package</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="19">
+							<td>
+								Loan account in companies - amount of income credited to loan
+								account (excluding capital introduced)
+							</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="20">
+							<td>House</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="21">
+							<td>Furniture and Household Effects</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="22">
+							<td>Motor Vehicles ( Not for Resale )</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="23">
+							<td>Diamonds and Precious Sts (Not for business)</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="24">
+							<td>Plant, Machinery, Fixtures and Fittings</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="25">
+							<td>Trade and Loan Debtors</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr id="26">
+							<td>Stamps, Paintings & Coins Collection</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+						<tr id="27">
+							<td>Deposits and Pledges</td>
+							<td>
+								<div class="form-group mb-0">
+									<input
+										type="number"
+										value="0"
+										id="segments_per_route1"
+										onkeyup="cal('table1');"
+									/>
+									<!-- <span class="control-group__currency">£</span> -->
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td>TOTAL ASSETS:</td>
+							<td>
+								<input type="number" value="0" id="total_kilometer" readonly />
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<br />
+
+				<table id="table2" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>LIABILITIES</th>
+							<th>Total</th>
+							<th>Deductible</th>
+							<th>Not-Deductible</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="1">
+							<td>Mortgage on House (Annually)</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr id="2">
+							<td>Bank Overdraft (to fund stocks and trade debtors only)</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+
+						<tr id="3">
+							<td>Trade Creditors</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+
+						<tr id="4">
+							<td>
+								Instalment Sale and Lease Creditors to Fund Motor Vehicles/Plant
+								and Equipment
+							</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr id="5">
+							<td>
+								Any other Liabilities incurred in respect of an asset on which
+								Zakat is not payable
+							</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td></td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr id="6">
+							<td>
+								Shipping Loans to finance business merchandise and/or trade
+								debtors
+							</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+
+						<tr id="7">
+							<td>Income Tax / Vat</td>
+							<td>
+								<input
+									type="number"
+									value="0"
+									id="segments_per_route1"
+									onkeyup="cal('table2');"
+								/>
+							</td>
+							<td>
+								<label class="check-container">
+									<input type="checkbox" checked="checked" hidden />
+									<span class="checkmark">
+										<div class="check">
+											<img src="img/check.png" alt="" class="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>TOTAL LIABILITIES:</td>
+							<td><input type="number" value="0" id="total" readonly /></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<br />
+
+				<table id="table3" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>SUMMARY</th>
+							<th>(£)</th>
+						</tr>
+						<tr>
+							<td>Total Value of Assets Subject to Zakat</td>
+							<td>
+								<input type="number" value="0" id="zakat_total" readonly />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Deduct Liabilities relating only to Assets subject to Zakat
+							</td>
+							<td>
+								<input type="number" value="0" id="zakat_total2" readonly />
+							</td>
+						</tr>
+						<tr>
+							<td>Net Amount subject to Zakat:</td>
+							<td>
+								<input type="number" value="0" id="last_total" readonly />
+							</td>
+						</tr>
+
+						<tr>
+							<td>ZAKAH = 2.5% x £ NET AMOUNT:</td>
+							<td><input type="number" value="0" id="net" readonly /></td>
+						</tr>
+					</thead>
+				</table>
+
+				<br />
+				<table id="table4" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>
+								To DONATE Online Now: The Ahmed Ali Petkar Foundation (TAAP
+								Foundation Registered Charity Number: 1144345)
+							</th>
+							<th>HSBC Bank Sort Code: 40-11-43 Account No: 51447777</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://www.e-nisab.com/calculator"
+									>Nisab Value Today</a
+								>
+							</td>
+							<td>
+								<a
+									href="https://www.bullionbypost.co.uk/gold-price/current-gold-price/"
+									>Gold and Silver Price Today</a
+								>
+							</td>
+						</tr>
+						<tr>
+							<td>Gold - 10th July 2017</td>
+							<td>
+								<input
+									type="number"
+									value="2805.21"
+									id="zakat_total2"
+									readonly
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>Silver - 10th July 2017</td>
+							<td>
+								<input type="number" value="231.67" id="last_total" readonly />
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<div class="button-group row">
+					<div class="col-md-6">
+						<button class="btn calculate">Calculate</button>
+					</div>
+					<div class="col-md-6">
+						<button class="btn reset">reset</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			function cal(type) {
+				// alert(type);
+				let total1 = 0;
+				let total2 = 0;
+				if (type === "table1") {
+					let len = 27;
+					$(`#${type}  tbody tr`).each(function (index, key) {
+						if (index + 1 < 28) {
+							let val = $(`#table1 tbody tr#${index + 1} td input`).val();
+							console.log(
+								`#table1 tbody tr#${index + 1} td input`,
+								parseInt(val),
+								typeof val,
+							);
+							if (val == "0" || val == "NaN") {
+							} else {
+								total1 += parseInt(val);
+							}
+						}
+					});
+					$("#total_kilometer").val(total1);
+					$("#zakat_total").val(total1);
+					zakat = $("#zakat_total").val();
+					zakat2 = $("#zakat_total2").val();
+					zakat3 = zakat - zakat2;
+					$("#last_total").val(zakat3);
+					zakat4 = Math.round(parseInt(zakat3) * 2.5) / 100;
+					$("#net").val(zakat3);
+				}
+				let totals1 = 0;
+				let totals2 = 0;
+				if (type === "table2") {
+					let len = 7;
+					$(`#${type}  tbody tr`).each(function (index, key) {
+						if (index + 1 < 8) {
+							let val = $(`#table2 tbody tr#${index + 1} td input`).val();
+							console.log(
+								`#table2 tbody tr#${index + 1} td input`,
+								parseInt(val),
+								typeof val,
+							);
+							if (val == "0" || val == "NaN") {
+							} else {
+								totals1 += parseInt(val);
+							}
+						}
+					});
+					$("#zakat_total2").val(totals1);
+					zakat = $("#zakat_total").val();
+					zakat2 = $("#zakat_total2").val();
+					zakat3 = zakat - zakat2;
+					$("#last_total").val(zakat3);
+					zakat4 = Math.round(parseInt(zakat3) * 2.5) / 100;
+					$("#net").val(zakat4);
+					$("#total").val(totals1);
+				}
+			}
+		</script>
+	</body>
+</html>

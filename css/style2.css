@@ -4,6 +4,7 @@ body {
 }
 .zakat-calculator {
 	padding: 40px 0;
+	background: #dddddd1a;
 }
 th,
 td {
@@ -89,9 +90,9 @@ td .form-group span.control-group__currency {
 }
 .zakat-calculator table td label.check-container span.checkmark .check {
 	border: 1px solid #8d8d8d;
-	width: 26px;
-	height: 26px;
-	line-height: 22px;
+	width: 27px;
+	height: 27px;
+	line-height: 23px;
 }
 .zakat-calculator
 	table
@@ -111,11 +112,14 @@ td .form-group span.control-group__currency {
 }
 .zakat-calculator table th {
 	border-bottom: 1px solid #eeeeee !important;
+	background: #fff;
+	border-right: 0 !important;
 }
 .zakat-calculator table td {
 	border-bottom: 1px solid #eeeeee !important;
 	border-right: 1px solid #eeeeee !important;
 	padding: 15px !important;
+	background: #fff;
 }
 .zakat-calculator table td a {
 	color: #000;
@@ -135,4 +139,7 @@ td .form-group span.control-group__currency {
 }
 .zakat-calculator .button-group .calculate {
 	background: #fcbc45;
+}
+.zakat-calculator tr:hover td {
+	background: #dddddd3b !important;
 }
