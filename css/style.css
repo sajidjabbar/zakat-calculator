@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+body {
+	font-family: "Nunito", sans-serif;
+}
+.zakat-calculator {
+	padding: 40px 0;
+}
+th,
+td {
+	vertical-align: middle !important;
+	font-size: 14px;
+	color: #666;
+	font-weight: 400;
+	margin: 0;
+}
+input {
+	font-weight: 500;
+	font-size: 16px;
+	padding-left: 25px;
+	border-radius: 0;
+	border: 1px solid #bfbfbf;
+	padding: 7px 0 7px 25px;
+	box-shadow: none;
+	outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+td .form-group {
+	margin-bottom: 0;
+	position: relative;
+}
+td .form-group span.control-group__currency {
+	position: absolute;
+	left: 10px;
+	top: 9px;
+	font-size: 16px;
+	font-weight: 400;
+	font-size: 16px;
+}
+.zakat-calculator .heading {
+	padding-bottom: 15px;
+}
+.zakat-calculator .heading h4 {
+	color: #000;
+	font-weight: 600;
+	font-size: 25px;
+}
+.zakat-calculator th {
+	font-weight: 600;
+	color: #000;
+}
+.zakat-calculator table th {
+	text-align: center;
+}
+.zakat-calculator table th:first-child {
+	width: 35%;
+	text-align: left;
+}
+.zakat-calculator table th:nth-child(2) {
+	width: 20%;
+}
+.zakat-calculator table th:nth-child(3) {
+	width: 20%;
+}
+.zakat-calculator table th:last-child {
+	width: 20%;
+}
+.zakat-calculator table td {
+	color: #000;
+}
+.zakat-calculator table td:first-child {
+	font-size: 14px !important;
+	font-weight: 600;
+}
+.zakat-calculator table th {
+	font-size: 15px;
+	padding-left: 15px !important;
+}
+.zakat-calculator table td:nth-child(3) {
+	text-align: center;
+}
+.zakat-calculator table td:last-child {
+	text-align: center;
+}
+.zakat-calculator table td label.check-container span.checkmark .check {
+	border: 1px solid #8d8d8d;
+	width: 30px;
+	height: 30px;
+	line-height: 27px;
+}
+.zakat-calculator
+	table
+	td
+	label.check-container
+	input:checked
+	~ span.checkmark
+	.check
+	img {
+	opacity: 1;
+}
+/* .zakat-calculator table td label.check-container span.checkmark .check img {
+	opacity: 0;
+} */
+.table-bordered {
+	border: 1px solid #eeeeee !important;
+}
+.zakat-calculator table th {
+	border-bottom: 1px solid #eeeeee !important;
+}
+.zakat-calculator table td {
+	border-bottom: 1px solid #eeeeee !important;
+	border-right: 1px solid #eeeeee !important;
+	padding: 15px !important;
+}
+.zakat-calculator table td a {
+	color: #000;
+	font-weight: 600;
+}
+.zakat-calculator .button-group .btn {
+	width: 90%;
+	padding: 10px 20px;
+	border-radius: 0;
+	background: #dbdbdb;
+	color: #000;
+	font-family: "nunito";
+	font-weight: 500;
+	font-size: 17px;
+	margin: 0px auto;
+	display: table;
+}
+.zakat-calculator .button-group .calculate {
+	background: #fcbc45;
+}
