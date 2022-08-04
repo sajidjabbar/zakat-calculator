@@ -143,3 +143,6 @@ td .form-group span.control-group__currency {
 .zakat-calculator tr:hover td {
 	background: #dddddd3b !important;
 }
+table {
+	box-shadow: 0px 0px 9px #ddd;
+}
